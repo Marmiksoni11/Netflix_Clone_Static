@@ -1,0 +1,377 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+    background: #ffffff;
+}
+
+@font-face {
+    font-display: optional;
+    font-family: NKufi;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Regular.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: NKufi;
+    font-weight: 500;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Bold.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Bold.woff) format("woff")
+}
+
+.nkufi-font-loaded {
+    font-family: NKufi,Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+
+@font-face {
+    font-display: optional;
+    font-family: GraphikTH;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Medium.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Medium.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: GraphikTH;
+    font-weight: 500;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Bold.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Bold.woff) format("woff")
+}
+
+.graphik-font-loaded {
+    font-family: GraphikTH,Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+
+.netflix-sans-font-loaded {
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+
+.netflix-sans-font-loaded.nkufi-font-loaded {
+    font-family: NKufi,Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+
+.netflix-sans-font-loaded.graphik-font-loaded {
+    font-family: GraphikTH,Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 100;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 300;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 400;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 500;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 700;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff")
+}
+
+@font-face {
+    font-display: optional;
+    font-family: Netflix Sans;
+    font-weight: 900;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff")
+}
+
+/* this is navbar */
+#head{
+    display:flex;
+    flex-direction: column;
+    height: 9.8vh;
+    box-sizing:border-box;
+    background-color: black;
+    /* position: relative; */
+    
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+    height: 10.7vh;
+    z-index: 1;
+}
+.mid{
+    /* background-color: aqua; */
+    position: absolute;
+    background-color: #3131315c;
+    color: aliceblue;
+    border: 0.3px solid #626262;
+    top: 2%;
+    left: 27.6%;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 41vw;
+    font-family: GraphikTH,Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.mid li{
+    padding: 0.6rem;
+    list-style: none;
+    margin-right: 2rem;
+    position: relative;
+    left: 6%;
+}
+.mid li a{
+    text-decoration: none;
+    color: white;
+}
+.mid li:hover{
+    background-color: #0000008a;
+    cursor: pointer;
+}
+.rightside{
+    display: flex;
+    position: absolute;
+    right: 8%;
+    top: 3%;
+    width: 20%;
+}
+.logo svg{
+    position: absolute;
+    top: 3%;
+    height: 2rem;
+    width: 148px;
+    left: 11.5%;
+    fill:rgb(229, 9, 20);
+}
+#langbox{
+    height: 32px;
+}
+#langbox svg{
+    position: relative;
+    left: 32px;
+    top: 2px;
+    color:white;
+}
+
+#lang1{
+    padding: 6px 36px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.064);
+    font-size:1rem;
+    color: rgb(255, 255, 255);
+    border-radius:5px;
+    border-top-width: 0.1%;
+    /* outline:4px solid white; */
+    margin-right: 22px;
+    appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+    background-position: calc(100% - 12px) center !important;
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+    padding: 6px 32px 6px 37px;
+}
+
+/* To remove the arrow of select element in IE */
+#lang1::-ms-expand {
+  display: none;
+}
+#signIn1{
+    width: 76.9px;
+    margin-right: 5px;
+    background-color: rgb(229, 9, 20);
+    font-family: GraphikTH,Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size:0.93rem;
+    font-weight: bold;
+    color:white;
+    border-radius:5px;
+    border:none;
+}
+
+
+
+/* footer */
+
+footer{
+    /* height: 57vh; */
+    height: 55.7vh;
+    background: linear-gradient(10deg, rgba(229, 9, 20, 0) 58%, rgb(229, 9, 20) 128%),#000;
+}
+#mainFooter{
+    height: 50vh;
+    width: 71vw;
+    display: flex;
+    flex-direction: column;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    /* padding: 1%; */
+    position: relative;
+    top: 7.1%;
+    /* background-color: rgb(52, 12, 12); */
+    left: 11.5%;
+}
+#mainFooter h1{
+    /* font-size: 0.96rem;
+    font-weight: 400; */
+    font-size: 1rem;
+    font-weight: 400;
+    /* color: aliceblue; */
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    padding-top: 1.75rem;
+    padding-bottom: 2.3rem;
+}
+.links{
+    display: flex;
+    margin-bottom: 1.76%;
+}
+
+.sec1 li{
+    list-style: none;
+}
+
+.sec2 li{
+    list-style: none;
+}
+
+.sec3 li{
+    list-style: none;
+}
+
+.sec1 li a{
+    font-size: 0.88rem;
+    /* color: aliceblue; */
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    display: flex;
+    margin-bottom: 5%;
+    min-width: 294px;
+
+}
+.sec2{
+    position: relative;
+    left: 9.1%;
+
+}
+.sec3{
+    position: relative;
+    left: 18.4%;
+}
+.sec2 li a{
+    font-size: 0.88rem;
+    /* color: aliceblue; */
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    display: flex;
+    margin-bottom: 5%;
+    min-width: 294px;
+
+}
+.sec3 li a{
+    font-size: 0.88rem;
+    color: aliceblue;
+    font-weight: 400;
+    display: flex;
+    margin-bottom: 15.6%;
+
+}
+
+.netlan {
+    display: flex;
+    flex-direction: column;
+}
+.netlan h2{
+    font-size: 0.88rem;
+    /* color: aliceblue; */
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+}
+.langbox2{
+    position: relative;
+    right: 1.9%;
+    margin-bottom: 2.5%;
+    top: 2%;
+
+}
+
+/* about.css starts here */
+.whatnetmain{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 70vw;
+    /* background: rgb(255, 255, 255); */
+    font-family: "Netflix Sans",Helvetica,Arial,sans-serif;
+    left: 10%;
+}
+.whatnetmain h1{
+    font-size: 3rem;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.whatnetmain img{
+    height: 50vh;
+    width: 50vw;
+    margin-bottom: 5%;
+}
+.whatnetmain p{
+    padding-bottom: 1%;
+}
+.note{
+    display: flex;
+    background: #c5dff5;
+}
+.note h4{
+    margin-right: 2%;
+    width: 5vw;
+}
+#devices{
+    height: 97vh;
+}
+.smallBox{
+    height: 37vh;
+    width: 22vw;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid grey;
+    border-radius:3%;
+    position: absolute;
+    left: 83%;
+    top: 19%;
+    display: flex;
+    flex-direction: column;
+}
+.smallBox li{
+    list-style: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.smallBox li a {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    font-size:1.2rem;
+}
+.ulOfSmallBox{
+    position: relative;
+    top:4%;
+    left: 7%;
+}
+.ulOfSmallBox .firstli{
+    /* margin-bottom: 0; */
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: rgb(255, 204, 204);
+    width: 41%;
+}
